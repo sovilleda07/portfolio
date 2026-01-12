@@ -1,24 +1,49 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --background-light: #ffffff;
-  --background-dark: #0f0518;
+@theme {
+  --color-primary: #ec4899;
+  --color-primary-hover: #db2777;
+  --color-secondary: #a855f7;
+  --color-pastel-pink: #fbcfe8;
+  --color-pastel-purple: #e9d5ff;
+  --color-pastel-blue: #bae6fd;
+
+  --color-background-light: #ffffff;
+  --color-background-dark: #0f0518;
+
+  --color-surface-light: rgba(255, 255, 255, 0.4);
+  --color-surface-dark: rgba(20, 10, 35, 0.4);
+
+  --color-glass-border: rgba(255, 255, 255, 0.3);
+  --color-glass-border-dark: rgba(255, 255, 255, 0.1);
+
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  background-color: var(--background-light);
-  color: rgb(30 41 59);
-  -webkit-font-smoothing: antialiased;
+@layer base {
+  body {
+    @apply text-slate-800 bg-background-light font-jakarta antialiased;
+  }
+
+  html.dark body {
+    @apply text-slate-100 bg-background-dark;
+  }
 }
 
-html.dark body {
-  background-color: var(--background-dark);
-  color: rgb(241 245 249);
+.glass-panel {
+  backdrop-filter: blur(24px);
+  background-color: var(--color-surface-light);
+  border: 1px solid var(--color-glass-border);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+html.dark .glass-panel {
+  background-color: var(--color-surface-dark);
+  border-color: var(--color-glass-border-dark);
 }
 
 @keyframes blob {
