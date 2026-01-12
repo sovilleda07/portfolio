@@ -1,7 +1,13 @@
+import { Header } from './layout/Header';
+import { Footer } from './layout/Footer';
+
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-900 text-white">
-      Tailwind v4 funcionando
+    <div className="min-h-screen flex flex-col">
+      <Header />
+
+      <main className="flex-1">Testing</main>
+      <Footer />
     </div>
   );
 }
