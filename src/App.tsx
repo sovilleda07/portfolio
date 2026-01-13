@@ -1,5 +1,5 @@
-import { BackgroundBlobs } from './layout/BackgroundBlobs';
-import { Header } from './layout/Header';
+import { BackgroundBlobs } from './components/background/BackgroundBlobs';
+import { Header } from './components/layout/Header';
 
 function App() {
   return (
