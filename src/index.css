@@ -20,30 +20,48 @@
   --font-jakarta: 'Plus Jakarta Sans', sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    @apply text-slate-800 bg-background-light font-jakarta antialiased;
+    background-color: var(--color-background-light);
+    color: rgb(30 41 59);
+    font-family: var(--font-jakarta);
+    -webkit-font-smoothing: antialiased;
   }
 
   html.dark body {
-    @apply text-slate-100 bg-background-dark;
+    background-color: var(--color-background-dark);
+    color: rgb(241, 245, 249);
   }
 }
 
-.glass-panel {
-  backdrop-filter: blur(24px);
-  background-color: var(--color-surface-light);
-  border: 1px solid var(--color-glass-border);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
+@layer components {
+  .glass-panel {
+    backdrop-filter: blur(24px);
+    background-color: var(--color-surface-light);
+    border: 1px solid var(--color-glass-border);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
 
-html.dark .glass-panel {
-  background-color: var(--color-surface-dark);
-  border-color: var(--color-glass-border-dark);
+  html.dark .glass-panel {
+    background-color: var(--color-surface-dark);
+    border-color: var(--color-glass-border-dark);
+  }
+
+  .text-gradient {
+    background-image: linear-gradient(
+      to right,
+      var(--color-primary),
+      var(--color-secondary),
+      var(--color-secondary)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 }
 
 @keyframes blob {
