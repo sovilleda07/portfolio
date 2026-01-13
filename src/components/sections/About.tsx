@@ -39,7 +39,6 @@ export function About() {
             </div>
           </div>
 
-          {/* Cards */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             <div className="rounded-3xl border border-white/40 bg-white/40 p-8 transition-all duration-300 hover:-translate-y-2 hover:bg-white/60 hover:shadow-lg">
               <div className="mb-6 flex size-12 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-100 to-pink-50 text-primary">
