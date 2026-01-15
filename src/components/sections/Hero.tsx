@@ -4,6 +4,7 @@ import { Container } from '../ui/Container';
 export function Hero() {
   return (
     <Section
+      id="hero"
       size="hero"
       className="flex flex-col justify-center items-center text-center gap-8 relative"
     >

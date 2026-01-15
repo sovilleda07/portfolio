@@ -1,11 +1,13 @@
 type SectionProps = {
   children: React.ReactNode;
+  id: 'hero' | 'about' | 'skills' | 'projects' | 'contact';
   className?: string;
   size?: 'default' | 'hero' | 'tight';
 };
 
 export function Section({
   children,
+  id,
   className = '',
   size = 'default',
 }: SectionProps) {
@@ -16,7 +18,7 @@ export function Section({
   };
 
   return (
-    <section className={`w-full ${sizes[size]} ${className}`}>
+    <section id={id} className={`w-full ${sizes[size]} ${className}`}>
       {children}
     </section>
   );
