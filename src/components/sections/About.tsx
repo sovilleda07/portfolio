@@ -4,7 +4,7 @@ import { Section } from '../ui/Section';
 export function About() {
   return (
     <Section id="about">
-      <Container size="wide">
+      <Container size="wide" padded={false}>
         <div className="glass-panel rounded-[2.5rem] p-8 md:p-16">
           <div className="flex flex-col gap-12">
             <div className="mx-auto max-w-175 text-center">
