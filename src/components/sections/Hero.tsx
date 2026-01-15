@@ -1,8 +1,12 @@
+import { Section } from '../ui/Section';
 import { Container } from '../ui/Container';
 
 export function Hero() {
   return (
-    <section className="w-full min-h-[85vh] flex flex-col justify-center items-center text-center gap-8 py-20 relative">
+    <Section
+      size="hero"
+      className="flex flex-col justify-center items-center text-center gap-8 relative"
+    >
       <Container>
         <div className="flex flex-col items-center">
           <div className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-white/50 dark:bg-white/10 border border-white/30 dark:border-white/10 backdrop-blur-sm shadow-sm mb-6">
@@ -42,8 +46,8 @@ export function Hero() {
             <a
               href="#contact"
               className="flex items-center justify-center rounded-full h-12 px-8 bg-white/50 dark:bg-white/10
-                border border-white/20 hover:bg-white/80 dark:hover:bg-white/20 text-slate-900 dark:text-white
-                text-sm font-bold transition-all backdrop-blur-sm hover:-translate-y-0.5 w-full sm:w-auto"
+                  border border-white/20 hover:bg-white/80 dark:hover:bg-white/20 text-slate-900 dark:text-white
+                  text-sm font-bold transition-all backdrop-blur-sm hover:-translate-y-0.5 w-full sm:w-auto"
             >
               Get in Touch
             </a>
@@ -56,6 +60,6 @@ export function Hero() {
           keyboard_arrow_down
         </span>
       </div>
-    </section>
+    </Section>
   );
 }
