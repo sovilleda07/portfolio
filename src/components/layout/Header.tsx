@@ -1,3 +1,5 @@
+import { ThemeToggle } from '../ui/ThemeToggle';
+
 export function Header() {
   return (
     <div className="sticky top-4 z-50 w-full px-4 md:px-10">
@@ -56,15 +58,7 @@ export function Header() {
             </span>
           </button>
 
-          <button
-            aria-label="Toggle theme"
-            className="flex size-9 items-center justify-center rounded-full bg-white/20 text-slate-700 transition-all hover:bg-white/40 dark:bg-white/5 dark:text-white dark:hover:bg-white/10"
-            onClick={() => document.documentElement.classList.toggle('dark')}
-          >
-            <span className="material-symbols-outlined text-[20px]">
-              light_mode
-            </span>
-          </button>
+          <ThemeToggle />
 
           <button className="hidden h-9 items-center justify-center rounded-full bg-slate-900 px-5 text-xs font-bold text-white shadow-lg transition-opacity hover:opacity-90 dark:bg-white dark:text-slate-900 sm:flex">
             Resume
