@@ -10,8 +10,8 @@ export function Section({
   size = 'default',
 }: SectionProps) {
   const sizes = {
-    default: 'min-h-[85vh] py-24',
-    hero: 'py-20',
+    hero: 'min-h-[85vh] py-24',
+    default: 'py-20',
     tight: 'py-10',
   };
 
