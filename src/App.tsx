@@ -1,5 +1,5 @@
 import { BackgroundBlobs } from './components/background/BackgroundBlobs';
-import { Header } from './components/layout/Header';
+import { Header } from './components/layout/Header/Header';
 import { Hero } from './components/sections/Hero';
 import { About } from './components/sections/About';
 import { Skills } from './components/sections/Skills';

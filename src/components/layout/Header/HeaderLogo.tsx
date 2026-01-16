@@ -1,6 +1,6 @@
 export function HeaderLogo() {
   return (
-    <div className="flex items-center gap-2 md:justify-self-start">
+    <div className="flex items-center gap-2">
       <div className="flex size-10 items-center justify-center rounded-full bg-gradient-to-tr from-primary to-secondary text-white shadow-lg shadow-primary/30">
         <span className="material-symbols-outlined text-[20px]">code</span>
       </div>
