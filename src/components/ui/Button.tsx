@@ -1,12 +1,15 @@
-type ButtonVariant = 'primary' | 'secondary' | 'ghost';
+type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'outline' | 'soft';
 type ButtonSize = 'sm' | 'md';
+type ButtonRadius = 'full' | 'lg' | 'xl';
 
 type ButtonProps = {
   children: React.ReactNode;
   variant?: ButtonVariant;
   size?: ButtonSize;
+  radius?: ButtonRadius;
   as?: 'button' | 'a';
   href?: string;
+  disabled?: boolean;
   className?: string;
 };
 
@@ -14,13 +17,14 @@ export function Button({
   children,
   variant = 'primary',
   size = 'md',
+  radius = 'full',
   as = 'button',
   href,
+  disabled = false,
   className = '',
 }: ButtonProps) {
-  // TODO: Borré inline-flex
   const base =
-    'items-center justify-center gap-2 rounded-full font-bold transition-all active:scale-95';
+    'flex items-center justify-center gap-2 font-bold transition-all';
 
   const variants = {
     primary:
@@ -28,7 +32,10 @@ export function Button({
     secondary:
       'bg-slate-900 text-white hover:opacity-90 dark:bg-white dark:text-slate-900',
     ghost:
-      'bg-white/20 text-slate-700 hover:bg-white/40 dark:bg-white/5 dark:text-white',
+      'bg-white/50 text-slate-900 border border-white/20 hover:bg-white/80 dark:bg-white/10 dark:text-white dark:hover:bg-white/20',
+    outline:
+      'border border-slate-200 text-slate-700 hover:bg-slate-50 dark:border-white/20 dark:text-slate-200 dark:hover:bg-white/5',
+    soft: 'border border-slate-200 bg-white text-slate-600 shadow-sm hover:-translate-y-0.5 hover:border-primary/50 hover:shadow-md dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:border-primary/50',
   };
 
   const sizes = {
@@ -36,7 +43,17 @@ export function Button({
     md: 'h-12 px-8 text-sm',
   };
 
-  const classes = `${base} ${variants[variant]} ${sizes[size]} ${className}`;
+  const radiuses = {
+    full: 'rounded-full',
+    lg: 'rounded-lg',
+    xl: 'rounded-2xl',
+  };
+
+  const disabledStyles = 'cursor-not-allowed opacity-50 pointer-events-none';
+
+  const classes = `${base} ${variants[variant]} ${sizes[size]} ${
+    radiuses[radius]
+  } ${className} ${disabled ? disabledStyles : 'active:scale-95'}`;
 
   if (as === 'a') {
     return (
