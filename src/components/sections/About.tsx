@@ -1,5 +1,6 @@
 import { Container } from '../ui/Container';
 import { Section } from '../ui/Section';
+import { Button } from '../ui/Button';
 
 export function About() {
   return (
@@ -31,15 +32,17 @@ export function About() {
               </p>
 
               <div className="mt-8">
-                <a
-                  href="#"
-                  className="inline-flex h-12 items-center gap-2 rounded-full bg-primary px-8 text-sm font-bold text-white shadow-lg shadow-primary/30 transition-all hover:-translate-y-0.5 hover:bg-primary-hover hover:shadow-primary/50"
+                <Button
+                  variant="primary"
+                  as="a"
+                  href="www.linkedin.com/in/soniavilleda"
+                  className="inline-flex hover:-translate-y-0.5"
                 >
                   <span className="material-symbols-outlined text-[20px]">
                     download
                   </span>
                   Download CV
-                </a>
+                </Button>
               </div>
             </div>
 

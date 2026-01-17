@@ -1,5 +1,6 @@
 import { Section } from '../ui/Section';
 import { Container } from '../ui/Container';
+import { Button } from '../ui/Button';
 
 export function Projects() {
   return (
@@ -62,23 +63,32 @@ export function Projects() {
               </div>
 
               <div className="mt-auto flex items-center gap-3 border-t border-white/10 pt-4">
-                <button className="flex h-9 flex-1 items-center justify-center gap-2 rounded-lg bg-primary text-xs font-bold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary-hover">
+                <Button
+                  variant="primary"
+                  size="sm"
+                  radius="lg"
+                  className="flex-1"
+                >
                   <span className="material-symbols-outlined text-[16px]">
                     code
                   </span>
                   View on GitHub
-                </button>
+                </Button>
 
-                <button className="flex h-9 flex-1 items-center justify-center gap-2 rounded-lg border border-slate-200 text-xs font-bold text-slate-700 transition-colors hover:bg-slate-50 dark:border-white/20 dark:text-slate-200 dark:hover:bg-white/5">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  radius="lg"
+                  className="flex-1 transition-colors"
+                >
                   <span className="material-symbols-outlined text-[16px]">
                     open_in_new
                   </span>
                   Live Demo
-                </button>
+                </Button>
               </div>
             </div>
           </article>
-
           <article className="glass-panel group flex h-full flex-col overflow-hidden rounded-3xl transition-transform duration-500 hover:-translate-y-2">
             <div className="relative aspect-4/3 overflow-hidden">
               <div className="absolute inset-0 z-10 bg-secondary/10 mix-blend-overlay" />
@@ -115,19 +125,29 @@ export function Projects() {
               </div>
 
               <div className="mt-auto flex items-center gap-3 border-t border-white/10 pt-4">
-                <button className="flex h-9 flex-1 items-center justify-center gap-2 rounded-lg bg-primary text-xs font-bold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary-hover">
+                <Button
+                  variant="primary"
+                  size="sm"
+                  radius="lg"
+                  className="flex-1"
+                >
                   <span className="material-symbols-outlined text-[16px]">
                     code
                   </span>
                   View on GitHub
-                </button>
+                </Button>
 
-                <button className="flex h-9 flex-1 items-center justify-center gap-2 rounded-lg border border-slate-200 text-xs font-bold text-slate-700 transition-colors hover:bg-slate-50 dark:border-white/20 dark:text-slate-200 dark:hover:bg-white/5">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  radius="lg"
+                  className="flex-1 transition-colors"
+                >
                   <span className="material-symbols-outlined text-[16px]">
                     open_in_new
                   </span>
                   Live Demo
-                </button>
+                </Button>
               </div>
             </div>
           </article>
@@ -167,19 +187,30 @@ export function Projects() {
               </div>
 
               <div className="mt-auto flex items-center gap-3 border-t border-white/10 pt-4">
-                <button className="flex h-9 flex-1 items-center justify-center gap-2 rounded-lg bg-primary text-xs font-bold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary-hover">
+                <Button
+                  variant="primary"
+                  size="sm"
+                  radius="lg"
+                  className="flex-1"
+                >
                   <span className="material-symbols-outlined text-[16px]">
                     code
                   </span>
                   View on GitHub
-                </button>
+                </Button>
 
-                <button className="flex h-9 flex-1 items-center justify-center gap-2 rounded-lg border border-slate-200 text-xs font-bold text-slate-400 transition-colors cursor-not-allowed opacity-50 hover:bg-slate-50 dark:border-white/20 dark:text-slate-500 dark:hover:bg-white/5">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  radius="lg"
+                  disabled={true}
+                  className="flex-1 transition-colors"
+                >
                   <span className="material-symbols-outlined text-[16px]">
                     visibility_off
                   </span>
                   No Demo
-                </button>
+                </Button>
               </div>
             </div>
           </article>
@@ -214,19 +245,29 @@ export function Projects() {
               </div>
 
               <div className="mt-auto flex items-center gap-3 border-t border-white/10 pt-4">
-                <button className="flex h-9 flex-1 items-center justify-center gap-2 rounded-lg bg-primary text-xs font-bold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary-hover">
+                <Button
+                  variant="primary"
+                  size="sm"
+                  radius="lg"
+                  className="flex-1"
+                >
                   <span className="material-symbols-outlined text-[16px]">
                     code
                   </span>
                   View on GitHub
-                </button>
+                </Button>
 
-                <button className="flex h-9 flex-1 items-center justify-center gap-2 rounded-lg border border-slate-200 text-xs font-bold text-slate-700 transition-colors hover:bg-slate-50 dark:border-white/20 dark:text-slate-200 dark:hover:bg-white/5">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  radius="lg"
+                  className="flex-1 transition-colors"
+                >
                   <span className="material-symbols-outlined text-[16px]">
                     open_in_new
                   </span>
                   Live Demo
-                </button>
+                </Button>
               </div>
             </div>
           </article>
@@ -261,19 +302,29 @@ export function Projects() {
               </div>
 
               <div className="mt-auto flex items-center gap-3 border-t border-white/10 pt-4">
-                <button className="flex h-9 flex-1 items-center justify-center gap-2 rounded-lg bg-primary text-xs font-bold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary-hover">
+                <Button
+                  variant="primary"
+                  size="sm"
+                  radius="lg"
+                  className="flex-1"
+                >
                   <span className="material-symbols-outlined text-[16px]">
                     code
                   </span>
                   View on GitHub
-                </button>
+                </Button>
 
-                <button className="flex h-9 flex-1 items-center justify-center gap-2 rounded-lg border border-slate-200 text-xs font-bold text-slate-700 transition-colors hover:bg-slate-50 dark:border-white/20 dark:text-slate-200 dark:hover:bg-white/5">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  radius="lg"
+                  className="flex-1 transition-colors"
+                >
                   <span className="material-symbols-outlined text-[16px]">
                     open_in_new
                   </span>
                   Live Demo
-                </button>
+                </Button>
               </div>
             </div>
           </article>
@@ -308,31 +359,46 @@ export function Projects() {
               </div>
 
               <div className="mt-auto flex items-center gap-3 border-t border-white/10 pt-4">
-                <button className="flex h-9 flex-1 items-center justify-center gap-2 rounded-lg bg-primary text-xs font-bold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary-hover">
+                <Button
+                  variant="primary"
+                  size="sm"
+                  radius="lg"
+                  className="flex-1"
+                >
                   <span className="material-symbols-outlined text-[16px]">
                     code
                   </span>
                   View on GitHub
-                </button>
+                </Button>
 
-                <button className="flex h-9 flex-1 items-center justify-center gap-2 rounded-lg border border-slate-200 text-xs font-bold text-slate-700 transition-colors hover:bg-slate-50 dark:border-white/20 dark:text-slate-200 dark:hover:bg-white/5">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  radius="lg"
+                  className="flex-1 transition-colors"
+                >
                   <span className="material-symbols-outlined text-[16px]">
                     open_in_new
                   </span>
                   Live Demo
-                </button>
+                </Button>
               </div>
             </div>
           </article>
         </div>
 
         <div className="mt-12 flex w-full justify-center">
-          <button className="group inline-flex h-12 items-center gap-2 rounded-full border border-slate-200 bg-white px-8 text-sm font-bold text-slate-600 shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/50 hover:shadow-md dark:border-white/10 dark:bg-white/5 dark:text-white dark:hover:border-primary/50">
+          <Button
+            variant="soft"
+            size="md"
+            radius="full"
+            className="group inline-flex"
+          >
             Load More Projects
             <span className="material-symbols-outlined text-[20px] transition-transform group-hover:translate-y-0.5">
               expand_more
             </span>
-          </button>
+          </Button>
         </div>
 
         <div className="mt-8 text-center md:hidden">

@@ -1,5 +1,6 @@
 import { Section } from '../ui/Section';
 import { Container } from '../ui/Container';
+import { Button } from '../ui/Button';
 
 export function Contact() {
   return (
@@ -99,12 +100,9 @@ export function Contact() {
                   />
                 </div>
 
-                <button
-                  type="button"
-                  className="mt-2 h-12 w-full rounded-2xl bg-primary font-bold text-white shadow-lg shadow-primary/25 transition-all hover:bg-primary-hover hover:shadow-primary/40 active:scale-95"
-                >
+                <Button variant="primary" radius="xl" className="mt-2 w-full">
                   Send a message
-                </button>
+                </Button>
               </form>
             </div>
           </div>

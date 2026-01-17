@@ -1,5 +1,6 @@
 import { Section } from '../ui/Section';
 import { Container } from '../ui/Container';
+import { Button } from '../ui/Button';
 
 export function Hero() {
   return (
@@ -37,21 +38,23 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full">
-            <a
-              href="#projects"
-              className=" group relative flex items-center justify-center rounded-full h-12 px-8 bg-primary hover:bg-primary-hover text-white text-sm font-bold transition-all shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-0.5 w-full sm:w-auto"
+            <Button
+              variant="primary"
+              as="a"
+              href="projects"
+              className="group relative hover:-translate-y-0.5 w-full sm:w-auto"
             >
               View Projects
-            </a>
+            </Button>
 
-            <a
-              href="#contact"
-              className="flex items-center justify-center rounded-full h-12 px-8 bg-white/50 dark:bg-white/10
-                  border border-white/20 hover:bg-white/80 dark:hover:bg-white/20 text-slate-900 dark:text-white
-                  text-sm font-bold transition-all backdrop-blur-sm hover:-translate-y-0.5 w-full sm:w-auto"
+            <Button
+              variant="ghost"
+              as="a"
+              href="contact"
+              className="backdrop-blur-sm hover:-translate-y-0.5 w-full sm:w-auto"
             >
               Get in Touch
-            </a>
+            </Button>
           </div>
         </div>
       </Container>
