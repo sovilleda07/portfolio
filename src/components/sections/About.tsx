@@ -1,6 +1,7 @@
 import { Container } from '../ui/Container';
 import { Section } from '../ui/Section';
 import { Button } from '../ui/Button';
+import { FeatureCard } from '../ui/FeatureCard';
 
 export function About() {
   return (
@@ -47,50 +48,33 @@ export function About() {
             </div>
 
             <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-              <div className="rounded-3xl border border-white/40 bg-white/40 p-8 transition-all duration-300 hover:-translate-y-2 hover:bg-white/60 hover:shadow-lg">
-                <div className="mb-6 flex size-12 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-100 to-pink-50 text-primary">
-                  <span className="material-symbols-outlined">brush</span>
-                </div>
-
-                <h4 className="mb-2 text-xl font-bold">
-                  Front-end Development
-                </h4>
-
-                <p className="text-sm text-slate-500">
-                  Creating responsive and accessible user interfaces using React
+              <FeatureCard
+                icon="brush"
+                title="Front-end Development"
+                description="Creating responsive and accessible user interfaces using React
                   and modern JavaScript, with a strong focus on usability and
-                  clean component structure.
-                </p>
-              </div>
+                  clean component structure."
+                iconBg="bg-gradient-to-br from-pink-100 to-pink-50"
+              />
 
-              <div className="rounded-3xl border border-white/40 bg-white/40 p-8 transition-all duration-300 hover:-translate-y-2 hover:bg-white/60 hover:shadow-lg">
-                <div className="mb-6 flex size-12 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-100 to-purple-50 text-secondary">
-                  <span className="material-symbols-outlined">terminal</span>
-                </div>
-
-                <h4 className="mb-2 text-xl font-bold">Backend Logic</h4>
-
-                <p className="text-sm text-slate-500">
-                  Developing APIs and backend services with Node.js, handling
+              <FeatureCard
+                icon="terminal"
+                title="Backend Logic"
+                description="Developing APIs and backend services with Node.js, handling
                   business logic, data persistence, and integrations that
-                  support scalable applications.
-                </p>
-              </div>
+                  support scalable applications."
+                iconBg="bg-gradient-to-br from-purple-100 to-purple-50"
+                iconColor="text-secondary"
+              />
 
-              <div className="rounded-3xl border border-white/40 bg-white/40 p-8 transition-all duration-300 hover:-translate-y-2 hover:bg-white/60 hover:shadow-lg">
-                <div className="mb-6 flex size-12 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-100 to-blue-50 text-blue-500">
-                  <span className="material-symbols-outlined">layers</span>
-                </div>
-
-                <h4 className="mb-2 text-xl font-bold">
-                  Product & UX Thinking
-                </h4>
-
-                <p className="text-sm text-slate-500">
-                  Applying UX principles to ensure applications are easy to use,
-                  performant, and aligned with real user and product needs.
-                </p>
-              </div>
+              <FeatureCard
+                icon="layers"
+                title="Product & UX Thinking"
+                description="Applying UX principles to ensure applications are easy to use,
+                  performant, and aligned with real user and product needs."
+                iconBg="bg-gradient-to-br from-blue-100 to-blue-50"
+                iconColor="text-blue-500"
+              />
             </div>
           </div>
         </div>
