@@ -1,6 +1,7 @@
 import { Container } from '../ui/Container';
 import { Section } from '../ui/Section';
 import { Button } from '../ui/Button';
+import { SectionHeader } from '../ui/SectionHeader';
 import { FeatureCard } from '../ui/FeatureCard';
 
 export function About() {
@@ -10,27 +11,25 @@ export function About() {
         <div className="glass-panel rounded-[2.5rem] p-8 md:p-16">
           <div className="flex flex-col gap-12">
             <div className="mx-auto max-w-175 text-center">
-              <h2 className="mb-3 text-xs font-bold uppercase tracking-widest text-primary">
-                About me
-              </h2>
+              <SectionHeader
+                title="About me"
+                subtitle="Design Meets Logic"
+                subtitleAs="h3"
+              >
+                <p className="mb-10">
+                  I believe great software is built at the intersection of
+                  usability and engineering. With a full stack background, I
+                  work across front-end and back-end to build web applications
+                  that are both intuitive to use and technically solid.
+                </p>
 
-              <h3 className="mb-4 text-3xl font-bold md:text-4xl">
-                Desing Meets Logic
-              </h3>
-
-              <p className="mb-10 text-slate-600">
-                I believe great software is built at the intersection of
-                usability and engineering. With a full stack background, I work
-                across front-end and back-end to build web applications that are
-                both intuitive to use and technically solid.
-              </p>
-
-              <p className="text-slate-600">
-                My experience includes building user interfaces, developing
-                APIs, integrating external services, and working with databases,
-                alwats focusing on clean code, maintainability, and real-world
-                requirements.
-              </p>
+                <p>
+                  My experience includes building user interfaces, developing
+                  APIs, integrating external services, and working with
+                  databases, always focusing on clean code, maintainability, and
+                  real-world requirements.
+                </p>
+              </SectionHeader>
 
               <div className="mt-8">
                 <Button
