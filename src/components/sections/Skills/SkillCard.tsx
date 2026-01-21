@@ -12,7 +12,7 @@ export function SkillCard({
   skills,
 }: SkillCardProps) {
   return (
-    <div className="rounded-[2.5rem] bg-white p-10 shadow-lg transition-all duration-300 hover:shadow-xl">
+    <div className="rounded-[2.5rem] bg-white dark:bg-white/5 p-10 shadow-lg transition-all duration-300 hover:shadow-xl">
       <div className="mb-10 flex flex-col gap-1">
         <div
           className={`mb-4 flex size-16 items-center justify-center rounded-3xl ${iconBg} ${iconColor}`}
@@ -20,7 +20,7 @@ export function SkillCard({
           <span className="material-symbols-outlined text-[28px]">{icon}</span>
         </div>
 
-        <h3 className="text-[28px] font-bold leading-tight text-slate-900">
+        <h3 className="text-[28px] font-bold leading-tight text-slate-900 dark:text-white ">
           {title}
         </h3>
 

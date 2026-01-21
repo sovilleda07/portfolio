@@ -23,7 +23,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
     projectColorStyles[imageOverlayColor ?? projectColorStyles.primary];
 
   return (
-    <article className="glass-panel group flex h-full flex-col overflow-hidden rounded-3xl transition-transform duration-500 hover:-translate-y-2 project-enter">
+    <article className="glass-panel group flex h-full flex-col overflow-hidden rounded-3xl transition-transform duration-500 hover:-translate-y-2 animate-project-enter">
       <div className="relative aspect-4/3 overflow-hidden">
         {image ? (
           <>

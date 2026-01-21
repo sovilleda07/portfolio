@@ -14,16 +14,18 @@ export function FeatureCard({
   iconColor = 'text-primary',
 }: FeatureCardProps) {
   return (
-    <div className="rounded-3xl border border-white/40 bg-white/40 p-8 transition-all duration-300 hover:-translate-y-2 hover:bg-white/60 hover:shadow-lg">
+    <div className="rounded-3xl border border-white/40 bg-white/40 p-8 transition-all duration-300 group hover:-translate-y-2 hover:bg-white/60 hover:shadow-lg dark:bg-white/5 dark:border-white/10 dark:hover:bg-white/10 ">
       <div
-        className={`mb-6 flex size-12 items-center justify-center rounded-2xl ${iconBg} ${iconColor}`}
+        className={`mb-6 flex size-12 items-center justify-center rounded-2xl group-hover:scale-110 ${iconBg} ${iconColor}`}
       >
         <span className="material-symbols-outlined">{icon}</span>
       </div>
 
       <h4 className="mb-2 text-xl font-bold">{title}</h4>
 
-      <p className="text-sm text-slate-500">{description}</p>
+      <p className="text-slate-500 dark:text-slate-400 text-sm">
+        {description}
+      </p>
     </div>
   );
 }

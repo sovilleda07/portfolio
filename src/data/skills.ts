@@ -18,7 +18,7 @@ export const SKILLS: SkillCategoryData[] = [
     icon: 'web',
     title: 'Front-End',
     subtitle: 'Client Side',
-    iconBg: 'bg-pinl-100',
+    iconBg: 'bg-pink-100 dark:bg-pink-500/20',
     iconColor: 'text-pink-500',
     skills: [
       { icon: 'html', label: 'HTML5', color: 'text-orange-500' },
@@ -37,7 +37,7 @@ export const SKILLS: SkillCategoryData[] = [
     icon: 'dns',
     title: 'Back-End',
     subtitle: 'Server Side',
-    iconBg: 'bg-purple-100',
+    iconBg: 'bg-purple-100 dark:bg-purple-500/20 ',
     iconColor: 'text-purple-500',
     skills: [
       { icon: 'terminal', label: 'Node.js', color: 'text-green-500' },
@@ -57,7 +57,7 @@ export const SKILLS: SkillCategoryData[] = [
     icon: 'database',
     title: 'Database',
     subtitle: 'Data Management',
-    iconBg: 'bg-blue-100',
+    iconBg: 'bg-blue-100 dark:bg-blue-500/20',
     iconColor: 'text-blue-500',
     skills: [
       { icon: 'table_chart', label: 'MySQL', color: 'text-blue-700' },

@@ -10,7 +10,7 @@ export function Skills() {
       <Container size="wide" padded={false}>
         <div className="flex flex-col items-center gap-12">
           <SectionHeader title="Expertise" subtitle="My Toolkit">
-            <p className="max-w-lg">
+            <p className="text-slate-500 dark:text-slate-400 max-w-lg mx-auto">
               A curated stack of technologies for building robust and scalable
               applications.
             </p>

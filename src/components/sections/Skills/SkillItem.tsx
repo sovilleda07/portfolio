@@ -10,7 +10,7 @@ export function SkillItem({ icon, label, color }: SkillItemProps) {
       >
         <span className="material-symbols-outlined text-[28px]">{icon}</span>
       </div>
-      <span className="text-lg font-bold text-slate-700 transition-colors group-hover:text-current">
+      <span className="text-lg font-bold text-slate-700 dark:text-slate-200 transition-colors group-hover:text-current">
         {label}
       </span>
     </div>

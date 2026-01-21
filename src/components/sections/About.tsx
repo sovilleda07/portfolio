@@ -16,14 +16,14 @@ export function About() {
                 subtitle="Design Meets Logic"
                 subtitleAs="h3"
               >
-                <p className="mb-10">
+                <p className="text-slate-600 dark:text-slate-300 mb-10">
                   I believe great software is built at the intersection of
                   usability and engineering. With a full stack background, I
                   work across front-end and back-end to build web applications
                   that are both intuitive to use and technically solid.
                 </p>
 
-                <p>
+                <p className="text-slate-600 dark:text-slate-300 mb-10">
                   My experience includes building user interfaces, developing
                   APIs, integrating external services, and working with
                   databases, always focusing on clean code, maintainability, and
@@ -53,7 +53,7 @@ export function About() {
                 description="Creating responsive and accessible user interfaces using React
                   and modern JavaScript, with a strong focus on usability and
                   clean component structure."
-                iconBg="bg-gradient-to-br from-pink-100 to-pink-50"
+                iconBg="bg-gradient-to-br from-pink-100 to-pink-50 dark:from-primary/20 dark:to-primary/10"
               />
 
               <FeatureCard
@@ -62,7 +62,7 @@ export function About() {
                 description="Developing APIs and backend services with Node.js, handling
                   business logic, data persistence, and integrations that
                   support scalable applications."
-                iconBg="bg-gradient-to-br from-purple-100 to-purple-50"
+                iconBg="bg-gradient-to-br from-purple-100 to-purple-50 dark:from-secondary/20 dark:to-secondary/10"
                 iconColor="text-secondary"
               />
 
@@ -71,7 +71,7 @@ export function About() {
                 title="Product & UX Thinking"
                 description="Applying UX principles to ensure applications are easy to use,
                   performant, and aligned with real user and product needs."
-                iconBg="bg-gradient-to-br from-blue-100 to-blue-50"
+                iconBg="bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-500/20 dark:to-blue-500/10 "
                 iconColor="text-blue-500"
               />
             </div>
