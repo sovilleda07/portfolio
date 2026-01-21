@@ -11,6 +11,7 @@ type ButtonProps = {
   href?: string;
   disabled?: boolean;
   className?: string;
+  onClick?: () => void;
 };
 
 export function Button({
@@ -22,6 +23,7 @@ export function Button({
   href,
   disabled = false,
   className = '',
+  onClick,
 }: ButtonProps) {
   const base =
     'flex items-center justify-center gap-2 font-bold transition-all';
@@ -57,11 +59,25 @@ export function Button({
 
   if (as === 'a') {
     return (
-      <a href={href} className={classes}>
+      <a
+        href={href}
+        onClick={onClick}
+        className={classes}
+        aria-disabled={disabled}
+      >
         {children}
       </a>
     );
   }
 
-  return <button className={classes}>{children}</button>;
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      disabled={disabled}
+      className={classes}
+    >
+      {children}
+    </button>
+  );
 }
