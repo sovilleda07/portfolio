@@ -54,6 +54,7 @@ export function About() {
                   and modern JavaScript, with a strong focus on usability and
                   clean component structure."
                 iconBg="bg-gradient-to-br from-pink-100 to-pink-50 dark:from-primary/20 dark:to-primary/10"
+                animation="animate-float"
               />
 
               <FeatureCard
@@ -64,6 +65,7 @@ export function About() {
                   support scalable applications."
                 iconBg="bg-gradient-to-br from-purple-100 to-purple-50 dark:from-secondary/20 dark:to-secondary/10"
                 iconColor="text-secondary"
+                animation="animate-float-slow"
               />
 
               <FeatureCard
@@ -73,6 +75,7 @@ export function About() {
                   performant, and aligned with real user and product needs."
                 iconBg="bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-500/20 dark:to-blue-500/10 "
                 iconColor="text-blue-500"
+                animation="animate-float-slower"
               />
             </div>
           </div>

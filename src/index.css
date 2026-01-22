@@ -22,6 +22,13 @@
   --font-jakarta: 'Plus Jakarta Sans', sans-serif;
 
   --animate-blob: blob 10s infinite;
+  --animate-gradient-x: gradient 8s ease infinite;
+  --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
+  --animate-slide-up-fade: slide-up-fade 1s cubic-bezier(0.16, 1, 0.3, 1)
+    forwards;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float 8s ease-in-out infinite;
+  --animate-float-slow: float 10s ease-in-out infinite;
   --animate-project-enter: project-enter 0.4s ease-out both;
 
   @keyframes blob {
@@ -34,6 +41,50 @@
     }
     66% {
       transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+
+  @keyframes gradient {
+    0%,
+    100% {
+      background-size: 200% 200%;
+      background-position: left center;
+    }
+    50% {
+      background-size: 200% 200%;
+      background-position: left center;
+    }
+  }
+
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-up-fade {
+    0% {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
     }
   }
 
@@ -81,5 +132,17 @@
   }
   .animation-delay-4000 {
     animation-delay: 4s;
+  }
+  .stagger-1 {
+    animation-delay: 100ms;
+  }
+  .stagger-2 {
+    animation-delay: 200ms;
+  }
+  .stagger-3 {
+    animation-delay: 300ms;
+  }
+  .stagger-4 {
+    animation-delay: 400ms;
   }
 }
