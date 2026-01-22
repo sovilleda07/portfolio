@@ -5,7 +5,7 @@ import { Button } from '../ui/Button';
 export function Hero() {
   return (
     <Section
-      id="hero"
+      id="home"
       size="hero"
       className="flex flex-col justify-center items-center text-center gap-8 relative"
     >

@@ -1,6 +1,8 @@
+import type { SectionId } from '../../data/navigation';
+
 type SectionProps = {
   children: React.ReactNode;
-  id: 'hero' | 'about' | 'skills' | 'projects' | 'contact';
+  id: SectionId;
   className?: string;
   size?: 'default' | 'hero' | 'tight';
 };
@@ -18,7 +20,10 @@ export function Section({
   };
 
   return (
-    <section id={id} className={`w-full ${sizes[size]} ${className}`}>
+    <section
+      id={id}
+      className={`w-full scroll-mt-20 ${sizes[size]} ${className}`}
+    >
       {children}
     </section>
   );
