@@ -23,7 +23,7 @@ export function About() {
                   that are both intuitive to use and technically solid.
                 </p>
 
-                <p className="text-slate-600 dark:text-slate-300 mb-10">
+                <p className="text-slate-600 dark:text-slate-300">
                   My experience includes building user interfaces, developing
                   APIs, integrating external services, and working with
                   databases, always focusing on clean code, maintainability, and

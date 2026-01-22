@@ -24,7 +24,7 @@ export function SectionHeader({
 
   return (
     <div className={alignmentClass}>
-      <h2 className="text-xs font-bold uppercase tracking-widest text-primary">
+      <h2 className="text-xs font-bold uppercase tracking-widest text-primary mb-3">
         {title}
       </h2>
 
