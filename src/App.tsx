@@ -4,7 +4,7 @@ import { Hero } from './components/sections/Hero';
 import { About } from './components/sections/About';
 import { Skills } from './components/sections/Skills/Skills';
 import { Projects } from './components/sections/Projects/Projects';
-import { Contact } from './components/sections/Contact';
+import { Contact } from './components/sections/Contact/Contact';
 import { Footer } from './components/layout/Footer';
 
 function App() {
