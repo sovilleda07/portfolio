@@ -6,8 +6,11 @@ import { Skills } from './components/sections/Skills/Skills';
 import { Projects } from './components/sections/Projects/Projects';
 import { Contact } from './components/sections/Contact/Contact';
 import { Footer } from './components/layout/Footer/Footer';
+import { useDocumentTitle } from './hooks/useDocumentTitle';
 
 function App() {
+  useDocumentTitle();
+
   return (
     <div className="relative flex min-h-screen w-full flex-col">
       <BackgroundBlobs />
