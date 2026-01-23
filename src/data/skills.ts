@@ -16,8 +16,8 @@ export type SkillCategoryData = {
 export const SKILLS: SkillCategoryData[] = [
   {
     icon: 'web',
-    title: 'Front-End',
-    subtitle: 'Client Side',
+    title: 'skills.feature.frontend.title',
+    subtitle: 'skills.feature.frontend.subtitle',
     iconBg: 'bg-pink-100 dark:bg-pink-500/20',
     iconColor: 'text-pink-500',
     skills: [
@@ -35,8 +35,8 @@ export const SKILLS: SkillCategoryData[] = [
   },
   {
     icon: 'dns',
-    title: 'Back-End',
-    subtitle: 'Server Side',
+    title: 'skills.feature.backend.title',
+    subtitle: 'skills.feature.backend.subtitle',
     iconBg: 'bg-purple-100 dark:bg-purple-500/20 ',
     iconColor: 'text-purple-500',
     skills: [
@@ -55,8 +55,8 @@ export const SKILLS: SkillCategoryData[] = [
   },
   {
     icon: 'database',
-    title: 'Database',
-    subtitle: 'Data Management',
+    title: 'skills.feature.database.title',
+    subtitle: 'skills.feature.database.subtitle',
     iconBg: 'bg-blue-100 dark:bg-blue-500/20',
     iconColor: 'text-blue-500',
     skills: [

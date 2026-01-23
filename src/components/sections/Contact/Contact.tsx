@@ -5,8 +5,11 @@ import { ContactItem } from './ContactItem';
 import { contactLinks } from '../../../data/contact';
 import { contactIcons } from '../../ui/ContactIcons';
 import { FormField } from '../../ui/FormField';
+import { useTranslation } from 'react-i18next';
 
 export function Contact() {
+  const { t } = useTranslation();
+
   return (
     <Section id="contact">
       <Container size="narrow" padded={false}>
@@ -15,14 +18,11 @@ export function Contact() {
             <div className="flex flex-1 flex-col justify-between gap-8">
               <div>
                 <h2 className="mb-6 text-4xl font-bold text-slate-900 dark:text-white">
-                  Let’s work together
+                  {t('contact.title')}
                 </h2>
 
                 <p className="mb-8 leading-relaxed text-slate-600 dark:text-slate-300">
-                  I’m currently open to new opportunities and collaborations. If
-                  you’re looking for a full stack developer who enjoys building
-                  clean, scalable, and user-focused web applications, feel free
-                  to reach out.
+                  {t('contact.description')}
                 </p>
 
                 <div className="space-y-4">
@@ -30,7 +30,7 @@ export function Contact() {
                     <ContactItem
                       key={item.id}
                       href={item.href}
-                      label={item.label}
+                      label={t(item.label)}
                       icon={contactIcons[item.id]}
                       external={item.external}
                     />
@@ -41,35 +41,35 @@ export function Contact() {
 
             <div className="flex-1">
               <form className="flex flex-col gap-4">
-                <FormField label="Name">
+                <FormField label={t('contact.form.name.label')}>
                   <input
                     id="name"
                     type="text"
-                    placeholder="Your name"
+                    placeholder={t('contact.form.name.placeholder')}
                     className="h-12 w-full rounded-2xl border-white/40 bg-white/60 px-5 outline-none transition-all placeholder:text-slate-400 focus:border-transparent focus:ring-2 focus:ring-primary/50 dark:border-white/10 dark:bg-black/20"
                   />
                 </FormField>
 
-                <FormField label="Email">
+                <FormField label={t('contact.form.email.label')}>
                   <input
                     id="email"
                     type="email"
-                    placeholder="example@mail.com"
+                    placeholder={t('contact.form.email.placeholder')}
                     className="h-12 w-full rounded-2xl border-white/40 bg-white/60 px-5 outline-none transition-all placeholder:text-slate-400 focus:border-transparent focus:ring-2 focus:ring-primary/50 dark:border-white/10 dark:bg-black/20"
                   />
                 </FormField>
 
-                <FormField label="Message">
+                <FormField label={t('contact.form.message.label')}>
                   <textarea
                     id="message"
                     rows={3}
-                    placeholder="Tell me about your project..."
+                    placeholder={t('contact.form.message.placeholder')}
                     className="w-full resize-none rounded-2xl border-white/40 bg-white/60 p-5 outline-none transition-all placeholder:text-slate-400 focus:border-transparent focus:ring-2 focus:ring-primary/50 dark:border-white/10 dark:bg-black/20"
                   />
                 </FormField>
 
                 <Button variant="primary" radius="xl" className="mt-2 w-full">
-                  Send a message
+                  {t('contact.form.submit')}
                 </Button>
               </form>
             </div>

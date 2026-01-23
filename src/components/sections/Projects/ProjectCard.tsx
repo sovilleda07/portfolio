@@ -1,6 +1,7 @@
 import { Button } from '../../ui/Button';
 import type { ProjectData } from '../../../data/projects';
 import { projectColorStyles } from '../../../styles/projectColors';
+import { useTranslation } from 'react-i18next';
 
 type ProjectCardProps = {
   project: ProjectData;
@@ -18,6 +19,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
     liveUrl,
     disabledDemo,
   } = project;
+
+  const { t } = useTranslation();
 
   const styles =
     projectColorStyles[imageOverlayColor ?? projectColorStyles.primary];
@@ -49,10 +52,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <h4
             className={`mb-2 text-xl font-bold text-slate-900 transition-colors ${styles.hoverText} dark:text-white`}
           >
-            {title}
+            {t(title)}
           </h4>
           <p className="mb-4 text-sm leading-relaxed text-slate-500 dark:text-slate-400">
-            {description}
+            {t(description)}
           </p>
         </div>
 
@@ -77,7 +80,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             className="flex-1"
           >
             <span className="material-symbols-outlined text-[16px]">code</span>
-            View on GitHub
+            {t('projects.view_github')}
           </Button>
 
           <Button
@@ -92,7 +95,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             <span className="material-symbols-outlined text-[16px]">
               {disabledDemo ? 'visibility_off' : 'open_in_new'}
             </span>
-            {disabledDemo ? 'No Demo' : 'Live Demo'}
+            {disabledDemo ? t('projects.no_demo') : t('projects.demo')}
           </Button>
         </div>
       </div>

@@ -3,16 +3,21 @@ import { Container } from '../../ui/Container';
 import { SectionHeader } from '../../ui/SectionHeader';
 import { SkillCard } from './SkillCard';
 import { SKILLS } from '../../../data/skills';
+import { useTranslation } from 'react-i18next';
 
 export function Skills() {
+  const { t } = useTranslation();
+
   return (
     <Section id="skills" size="tight">
       <Container size="wide" padded={false}>
         <div className="flex flex-col items-center gap-12">
-          <SectionHeader title="Expertise" subtitle="My Toolkit">
+          <SectionHeader
+            title={t('skills.title')}
+            subtitle={t('skills.subtitle')}
+          >
             <p className="text-slate-500 dark:text-slate-400 max-w-lg mx-auto">
-              A curated stack of technologies for building robust and scalable
-              applications.
+              {t('skills.description')}
             </p>
           </SectionHeader>
 

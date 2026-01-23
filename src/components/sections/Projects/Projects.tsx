@@ -1,14 +1,17 @@
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Section } from '../../ui/Section';
 import { Container } from '../../ui/Container';
 import { Button } from '../../ui/Button';
 import { SectionHeader } from '../../ui/SectionHeader';
 import { ProjectCard } from './ProjectCard';
 import { projects } from '../../../data/projects';
-import { useState } from 'react';
 
 const INITIAL_VISIBLE = 3;
 
 export function Projects() {
+  const { t } = useTranslation();
+
   const [showAll, setShowAll] = useState(false);
 
   const visibleProjects = showAll
@@ -22,8 +25,8 @@ export function Projects() {
       <Container size="wide" padded={false}>
         <div className="mb-12 flex items-end justify-between px-4">
           <SectionHeader
-            title="Portfolio"
-            subtitle="Featured Projects"
+            title={t('projects.title')}
+            subtitle={t('projects.subtitle')}
             subtitleAs="h3"
             align="left"
             subtitleSpacing="none"
@@ -33,16 +36,16 @@ export function Projects() {
             href="#"
             className="hidden items-center gap-2 text-sm font-bold text-primary transition-all hover:gap-3 md:flex"
           >
-            View Github
+            {t('projects.github')}
             <span className="material-symbols-outlined text-lg">
               arrow_forward
             </span>
           </a>
         </div>
 
-        {projects.length === 0 && (
+        {visibleProjects.length === 0 && (
           <p className="mt-12 flex w-full justify-center text-center text-slate-500">
-            No projects available at the moment.
+            {t('projects.empty')}
           </p>
         )}
 
@@ -61,7 +64,9 @@ export function Projects() {
               className="group inline-flex"
               onClick={() => setShowAll((prev) => !prev)}
             >
-              {showAll ? 'Show Less Projects' : 'Load More Projects'}
+              {showAll
+                ? t('projects.less_projects')
+                : t('projects.more_projects')}
               <span className="material-symbols-outlined text-[20px] transition-transform group-hover:translate-y-0.5">
                 {showAll ? 'expand_less' : 'expand_more'}
               </span>
@@ -74,7 +79,7 @@ export function Projects() {
             href="#"
             className="inline-flex items-center gap-2 font-bold text-primary"
           >
-            View Github
+            {t('projects.github')}
             <span className="material-symbols-outlined">arrow_forward</span>
           </a>
         </div>

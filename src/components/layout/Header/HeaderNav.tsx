@@ -1,12 +1,14 @@
+import { useTranslation } from 'react-i18next';
 import { NAV_ITEMS } from '../../../data/navigation';
 import { useActiveSection } from '../../../hooks/useActiveSection';
 
 export function HeaderNav() {
+  const { t } = useTranslation();
   const activeSection = useActiveSection();
 
   return (
     <nav className="hidden items-center gap-8 md:flex">
-      {NAV_ITEMS.map(({ label, id }) => {
+      {NAV_ITEMS.map(({ labelKey, id }) => {
         const isActive = activeSection === id;
 
         return (
@@ -20,7 +22,7 @@ export function HeaderNav() {
                   : 'text-slate-600 hover:text-primary dark:text-slate-300'
               }`}
           >
-            {label}
+            {t(labelKey)}
           </a>
         );
       })}

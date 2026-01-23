@@ -8,18 +8,18 @@ export type ContactLink = {
 export const contactLinks: ContactLink[] = [
   {
     id: 'email',
-    label: 'Email',
+    label: 'contact.email',
     href: 'mailto:sovilleda07@gmail.com',
   },
   {
     id: 'github',
-    label: 'GithHub',
+    label: 'contact.github',
     href: 'https://github.com/sovilleda07',
     external: true,
   },
   {
     id: 'linkedin',
-    label: 'LinkedIn',
+    label: 'contact.linkedin',
     href: 'https://www.linkedin.com/in/soniavilleda',
     external: true,
   },

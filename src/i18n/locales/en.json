@@ -1,0 +1,122 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Sonia 👋",
+    "title_first_line": "Designing",
+    "title_second_line": "Digital Solutions",
+    "subtitle": "Full Stack Web Developer",
+    "description": "I build functional and scalable web applications, combining clean front-end interfaces with robust backend logic and API integrations.",
+    "technologies": "React · JavaScript · Node.js · APIs · SQL",
+    "projects": "View Projects",
+    "contact": "Get in Touch"
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "Design Meets Logic",
+    "description_first_line": "I believe great software is built at the intersection of usability and engineering. With a full stack background, I work across front-end and back-end to build web applications that are both intuitive to use and technically solid.",
+    "description_second_line": "My experience includes building user interfaces, developing APIs, integrating external services, and working with databases, always focusing on clean code, maintainability, and real-world requirements.",
+    "download_cv": "Download CV",
+    "feature": {
+      "frontend": {
+        "title": "Front-end Development",
+        "description": "Creating responsive and accessible user interfaces using React and modern JavaScript, with a strong focus on usability and clean component structure."
+      },
+      "backend": {
+        "title": "Back-end Logic",
+        "description": "Developing APIs and backend services with Node.js, handling business logic, data persistence, and integrations that support scalable applications."
+      },
+      "ux": {
+        "title": "Product & UX Thinking",
+        "description": "Applying UX principles to ensure applications are easy to use, performant, and aligned with real user and product needs."
+      }
+    }
+  },
+  "skills": {
+    "title": "Expertise",
+    "subtitle": "My Toolkit",
+    "description": " A curated stack of technologies for building robust and scalable applications.",
+    "feature": {
+      "frontend": {
+        "title": "Front-End",
+        "subtitle": "Client Side"
+      },
+      "backend": {
+        "title": "Back-End",
+        "subtitle": "Server Side"
+      },
+      "database": {
+        "title": "Database",
+        "subtitle": "Data Management"
+      }
+    }
+  },
+  "projects": {
+    "title": "Portfolio",
+    "subtitle": "Featured Projects",
+    "github": "View GitHub",
+    "empty": "No projects available at the moment.",
+    "project": {
+      "ecommerce": {
+        "title": "React E-commerce",
+        "description": "Frontend e-commerce application built with React, featuring dynamic components, routing, and basic state management."
+      },
+      "game_rock": {
+        "title": "Rock Paper Scissors (React)",
+        "description": "Interactive game built with React and Vite, focused on component-based architecture, state management, and user interaction."
+      },
+      "todo": {
+        "title": "To-Do List (API)",
+        "description": "RESTful API built with Node.js and Express that provides CRUD operations for managing tasks, demonstrating backend fundamentals and API design."
+      },
+      "movie": {
+        "title": "Movie Database",
+        "description": "A responsive movie discovery app that fetches data from TMDB API, featuring search functionality, category filtering, and detailed movie pages."
+      },
+      "weather": {
+        "title": "Weather Dashboard",
+        "description": "Real-time weather application providing current conditions and 5-day forecasts for any city, utilizing OpenWeatherMap API and local storage for history."
+      },
+      "chat": {
+        "title": "Real-time Chat App",
+        "description": "A full-stack chat application enabling real-time messaging using Socket.io, with user authentication and chat room functionality."
+      }
+    },
+    "view_github": "View on GitHub",
+    "demo": "Live Demo",
+    "no_demo": "No Demo",
+    "more_projects": "Load More Projects",
+    "less_projects": "Show Less Projects"
+  },
+  "contact": {
+    "title": "Let’s work together",
+    "description": "I’m currently open to new opportunities and collaborations. If you’re looking for a full stack developer who enjoys building clean, scalable, and user-focused web applications, feel free to reach out.",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "form": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Your name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "example@mail.com"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Tell me about your project..."
+      },
+      "submit": "Send a message"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Sonia Villeda. All rights reserved."
+  }
+}
