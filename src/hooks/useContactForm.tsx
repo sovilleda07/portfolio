@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 type Status = 'idle' | 'sending' | 'success' | 'error';
 
@@ -40,6 +40,16 @@ export function useContactForm(endpoint: string) {
       setStatus('error');
     }
   }
+
+  useEffect(() => {
+    if (status === 'success' || status === 'error') {
+      const timer = setTimeout(() => {
+        setStatus('idle');
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [status]);
 
   return {
     form,

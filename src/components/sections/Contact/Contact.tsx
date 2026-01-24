@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Section } from '../../ui/Section';
 import { Container } from '../../ui/Container';
@@ -7,50 +6,15 @@ import { ContactItem } from './ContactItem';
 import { contactLinks } from '../../../data/contact';
 import { contactIcons } from '../../ui/ContactIcons';
 import { FormField } from '../../ui/FormField';
+import { useContactForm } from '../../../hooks/useContactForm';
 
 export function Contact() {
   const { t } = useTranslation();
 
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-
   const FORM_ENDPOINT = `https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`;
 
-  const [status, setStatus] = useState<
-    'idle' | 'sending' | 'success' | 'error'
-  >('idle');
-
-  function handleChange(
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) {
-    setForm({ ...form, [e.target.id]: e.target.value });
-  }
-
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    setStatus('sending');
-
-    try {
-      const res = await fetch(FORM_ENDPOINT, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: JSON.stringify(form),
-      });
-
-      if (!res.ok) throw new Error();
-
-      setStatus('success');
-      setForm({ name: '', email: '', message: '' });
-    } catch {
-      setStatus('error');
-    }
-  }
+  const { form, status, handleChange, handleSubmit } =
+    useContactForm(FORM_ENDPOINT);
 
   return (
     <Section id="contact">
