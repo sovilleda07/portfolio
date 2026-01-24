@@ -1,6 +1,7 @@
 type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'outline' | 'soft';
 type ButtonSize = 'sm' | 'md';
 type ButtonRadius = 'full' | 'lg' | 'xl';
+type ButtonType = 'button' | 'submit' | 'reset';
 
 type ButtonProps = {
   children: React.ReactNode;
@@ -8,6 +9,7 @@ type ButtonProps = {
   size?: ButtonSize;
   radius?: ButtonRadius;
   as?: 'button' | 'a';
+  type?: ButtonType;
   href?: string;
   disabled?: boolean;
   className?: string;
@@ -20,6 +22,7 @@ export function Button({
   size = 'md',
   radius = 'full',
   as = 'button',
+  type = 'button',
   href,
   disabled = false,
   className = '',
@@ -72,7 +75,7 @@ export function Button({
 
   return (
     <button
-      type="button"
+      type={type}
       onClick={onClick}
       disabled={disabled}
       className={classes}
