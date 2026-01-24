@@ -134,16 +134,20 @@ export function Contact() {
                     : t('contact.form.submit')}
                 </Button>
 
-                {status === 'success' && (
-                  <p className="text-center text-sm text-green-600 mt-2">
-                    {t('contact.form.success')}
-                  </p>
-                )}
-
-                {status === 'error' && (
-                  <p className="text-center text-sm text-red-600 mt-2">
-                    {t('contact.form.error')}
-                  </p>
+                {status !== 'idle' && status !== 'sending' && (
+                  <div
+                    className={`mt-3 rounded-xl px-4 py-3 text-center text-sm font-medium animate-fade-in-up
+                      ${
+                        status === 'success'
+                          ? 'bg-green-500/10 text-green-700 dark:text-green-400'
+                          : 'bg-red-500/10 text-red-700 dark:text-red-400'
+                      }
+                    `}
+                  >
+                    {status === 'success'
+                      ? t('contact.form.success')
+                      : t('contact.form.error')}
+                  </div>
                 )}
               </form>
             </div>
