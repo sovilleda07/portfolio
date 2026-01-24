@@ -116,7 +116,10 @@
         "label": "Mensaje",
         "placeholder": "Cuéntame sobre tu proyecto..."
       },
-      "submit": "Enviar mensaje"
+      "submit": "Enviar mensaje",
+      "sending": "Enviando mensaje",
+      "success": "¡Mensaje enviado exitosamente!",
+      "error": "Algo salió mal. Inténtalo de nuevo."
     }
   },
   "footer": {

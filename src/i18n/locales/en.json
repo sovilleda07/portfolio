@@ -116,7 +116,10 @@
         "label": "Message",
         "placeholder": "Tell me about your project..."
       },
-      "submit": "Send a message"
+      "submit": "Send a message",
+      "sending": "Sending message",
+      "success": "Message sent successfully!",
+      "error": "Something went wrong. Try again."
     }
   },
   "footer": {
