@@ -4,9 +4,11 @@ import { Section } from '../ui/Section';
 import { Button } from '../ui/Button';
 import { SectionHeader } from '../ui/SectionHeader';
 import { FeatureCard } from '../ui/FeatureCard';
+import { useResume } from '../../hooks/useResume';
 
 export function About() {
   const { t } = useTranslation();
+  const { resumeURL, resumeFilename } = useResume();
 
   return (
     <Section id="about">
@@ -30,9 +32,10 @@ export function About() {
 
               <div className="mt-8">
                 <Button
-                  variant="primary"
                   as="a"
-                  href="www.linkedin.com/in/soniavilleda"
+                  href={resumeURL}
+                  download={resumeFilename}
+                  variant="primary"
                   className="inline-flex hover:-translate-y-0.5"
                 >
                   <span className="material-symbols-outlined text-[20px]">
