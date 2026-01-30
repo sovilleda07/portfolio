@@ -12,6 +12,7 @@ type ButtonProps = {
   type?: ButtonType;
   href?: string;
   disabled?: boolean;
+  download?: boolean | string;
   className?: string;
   onClick?: () => void;
 };
@@ -25,6 +26,7 @@ export function Button({
   type = 'button',
   href,
   disabled = false,
+  download = false,
   className = '',
   onClick,
 }: ButtonProps) {
@@ -65,6 +67,7 @@ export function Button({
       <a
         href={href}
         onClick={onClick}
+        download={download}
         className={classes}
         aria-disabled={disabled}
       >
