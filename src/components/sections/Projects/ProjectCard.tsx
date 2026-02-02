@@ -74,10 +74,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <Button
             as="a"
             href={githubUrl}
-            variant="primary"
+            variant="outline"
             size="sm"
             radius="lg"
             className="flex-1"
+            disabled={!githubUrl}
           >
             <span className="material-symbols-outlined text-[16px]">code</span>
             {t('projects.view_github')}
@@ -86,7 +87,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <Button
             as="a"
             href={liveUrl}
-            variant="outline"
+            variant="primary"
             size="sm"
             radius="lg"
             disabled={disabledDemo || !liveUrl}

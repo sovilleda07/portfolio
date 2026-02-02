@@ -67,28 +67,24 @@
     "empty": "No projects available at the moment.",
     "project": {
       "ecommerce": {
-        "title": "React E-commerce",
+        "title": "ClickShop E-commerce",
         "description": "Frontend e-commerce application built with React, featuring dynamic components, routing, and basic state management."
       },
       "game_rock": {
-        "title": "Rock Paper Scissors (React)",
+        "title": "Rock Paper Scissors",
         "description": "Interactive game built with React and Vite, focused on component-based architecture, state management, and user interaction."
       },
       "todo": {
         "title": "To-Do List (API)",
         "description": "RESTful API built with Node.js and Express that provides CRUD operations for managing tasks, demonstrating backend fundamentals and API design."
       },
-      "movie": {
-        "title": "Movie Database",
-        "description": "A responsive movie discovery app that fetches data from TMDB API, featuring search functionality, category filtering, and detailed movie pages."
+      "tickets": {
+        "title": "Support Ticket System",
+        "description": "Development of a comprehensive technical support platform designed to centralize and streamline incident resolution, achieving an 80% reduction in response times."
       },
-      "weather": {
-        "title": "Weather Dashboard",
-        "description": "Real-time weather application providing current conditions and 5-day forecasts for any city, utilizing OpenWeatherMap API and local storage for history."
-      },
-      "chat": {
-        "title": "Real-time Chat App",
-        "description": "A full-stack chat application enabling real-time messaging using Socket.io, with user authentication and chat room functionality."
+      "trays": {
+        "title": "Agricultural Logistics System",
+        "description": "I optimized the farm's operational workflow using a specialized system for recording production trays, facilitating vegetable stock control."
       }
     },
     "view_github": "View on GitHub",

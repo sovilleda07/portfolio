@@ -67,28 +67,24 @@
     "empty": "No hay proyectos disponibles en este momento.",
     "project": {
       "ecommerce": {
-        "title": "E-commerce con React",
+        "title": "ClickShop E-commerce",
         "description": "Aplicación de comercio electrónico desarrollada con React, que incluye componentes dinámicos, enrutamiento y gestión de estado básica."
       },
       "game_rock": {
-        "title": "Piedra, Papel o Tijera (React)",
+        "title": "Piedra, Papel o Tijera",
         "description": "Juego interactivo construido con React y Vite, enfocado en arquitectura basada en componentes, gestión de estado e interacción con el usuario."
       },
       "todo": {
         "title": "To-Do List (API)",
         "description": "API RESTful construida con Node.js y Express que ofrece operaciones CRUD para la gestión de tareas, demostrando fundamentos de backend y diseño de APIs."
       },
-      "movie": {
-        "title": "Base de Datos de Películas",
-        "description": "Aplicación adaptativa para el descubrimiento de películas que consume datos de la API de TMDB, con funciones de búsqueda, filtrado por categorías y páginas de detalles."
+      "tickets": {
+        "title": "Sistema de Tickets de Soporte",
+        "description": "Desarrollo de una plataforma integral de soporte técnico diseñada para centralizar y agilizar la resolución de incidencias, logrando una reducción del 80% en los tiempos de respuesta."
       },
-      "weather": {
-        "title": "Panel de Clima",
-        "description": "Aplicación meteorológica en tiempo real que proporciona condiciones actuales y pronósticos de 5 días para cualquier ciudad, utilizando la API de OpenWeatherMap."
-      },
-      "chat": {
-        "title": "Chat en Tiempo Real",
-        "description": "Aplicación de chat full-stack que permite mensajería en tiempo real mediante Socket.io, con autenticación de usuarios y funcionalidad de salas de chat."
+      "trays": {
+        "title": "Sistema de Logística Agrícola",
+        "description": "Optimización del flujo operativo en finca mediante un sistema especializado en el registro de bandejas de producción, facilitando el control de stock de verduras."
       }
     },
     "view_github": "Ver en GitHub",
