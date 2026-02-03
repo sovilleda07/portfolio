@@ -1,13 +1,16 @@
 import { BackgroundBlobs } from './components/background/BackgroundBlobs';
-import { Header } from './components/layout/Header';
+import { Header } from './components/layout/Header/Header';
 import { Hero } from './components/sections/Hero';
 import { About } from './components/sections/About';
-import { Skills } from './components/sections/Skills';
-import { Projects } from './components/sections/Projects';
-import { Contact } from './components/sections/Contact';
-import { Footer } from './components/layout/Footer';
+import { Skills } from './components/sections/Skills/Skills';
+import { Projects } from './components/sections/Projects/Projects';
+import { Contact } from './components/sections/Contact/Contact';
+import { Footer } from './components/layout/Footer/Footer';
+import { useDocumentTitle } from './hooks/useDocumentTitle';
 
 function App() {
+  useDocumentTitle();
+
   return (
     <div className="relative flex min-h-screen w-full flex-col">
       <BackgroundBlobs />

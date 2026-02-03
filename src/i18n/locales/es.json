@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Sonia Villeda | Desarrolladora Full Stack"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "resume": "Currículum"
+  },
+  "hero": {
+    "greeting": "Hola, soy Sonia 👋",
+    "title_first_line": "Diseñando",
+    "title_second_line": "Soluciones Digitales",
+    "subtitle": "Desarrolladora Web Full Stack",
+    "description": "Construyo aplicaciones web funcionales y escalables, combinando interfaces front-end limpias con lógica de back-end robusta e integraciones de API.",
+    "technologies": "React · JavaScript · TypeScript · Node.js · APIs · SQL",
+    "projects": "Ver Proyectos",
+    "contact": "Hablemos"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "subtitle": "Donde el Diseño se une a la Lógica",
+    "description_first_line": "Creo que el software de calidad se construye en la intersección entre la usabilidad y la ingeniería. Con una formación Full Stack, trabajo tanto en el front-end como en el back-end para crear aplicaciones web que son intuitivas para el usuario y técnicamente sólidas.",
+    "description_second_line": "Mi experiencia incluye la creación de interfaces de usuario, el desarrollo de APIs, la integración de servicios externos y el trabajo con bases de datos; siempre enfocada en el código limpio, la mantenibilidad y los requisitos del mundo real.",
+    "download_cv": "Descargar CV",
+    "feature": {
+      "frontend": {
+        "title": "Desarrollo Front-end",
+        "description": "Creación de interfaces de usuario adaptables y accesibles utilizando React y JavaScript moderno, con un fuerte enfoque en la usabilidad y una estructura de componentes limpia."
+      },
+      "backend": {
+        "title": "Lógica Back-end",
+        "description": "Desarrollo de APIs y servicios backend con Node.js, gestionando la lógica de negocio, la persistencia de datos y las integraciones que dan soporte a aplicaciones escalables."
+      },
+      "ux": {
+        "title": "Mentalidad de Producto y UX",
+        "description": "Aplicación de principios de UX para garantizar que las aplicaciones sean fáciles de usar, eficientes y estén alineadas con las necesidades reales del usuario y del producto."
+      }
+    }
+  },
+  "skills": {
+    "title": "Especialización",
+    "subtitle": "Mi stack",
+    "description": "Una selección de tecnologías diseñadas para construir aplicaciones robustas y escalables.",
+    "feature": {
+      "frontend": {
+        "title": "Front-End",
+        "subtitle": "Lado del Cliente"
+      },
+      "backend": {
+        "title": "Back-End",
+        "subtitle": "Lado del Servidor"
+      },
+      "database": {
+        "title": "Base de Datos",
+        "subtitle": "Gestión de Datos"
+      }
+    }
+  },
+  "projects": {
+    "title": "Portafolio",
+    "subtitle": "Proyectos Destacados",
+    "github": "Ver GitHub",
+    "empty": "No hay proyectos disponibles en este momento.",
+    "project": {
+      "ecommerce": {
+        "title": "ClickShop E-commerce",
+        "description": "Aplicación de comercio electrónico desarrollada con React, que incluye componentes dinámicos, enrutamiento y gestión de estado básica."
+      },
+      "game_rock": {
+        "title": "Piedra, Papel o Tijera",
+        "description": "Juego interactivo construido con React y Vite, enfocado en arquitectura basada en componentes, gestión de estado e interacción con el usuario."
+      },
+      "todo": {
+        "title": "To-Do List (API)",
+        "description": "API RESTful construida con Node.js y Express que ofrece operaciones CRUD para la gestión de tareas, demostrando fundamentos de backend y diseño de APIs."
+      },
+      "tickets": {
+        "title": "Sistema de Tickets de Soporte",
+        "description": "Desarrollo de una plataforma integral de soporte técnico diseñada para centralizar y agilizar la resolución de incidencias, logrando una reducción del 80% en los tiempos de respuesta."
+      },
+      "trays": {
+        "title": "Sistema de Logística Agrícola",
+        "description": "Optimización del flujo operativo en finca mediante un sistema especializado en el registro de bandejas de producción, facilitando el control de stock de verduras."
+      }
+    },
+    "view_github": "Ver en GitHub",
+    "demo": "Demo en Vivo",
+    "no_demo": "Sin Demo",
+    "more_projects": "Cargar más proyectos",
+    "less_projects": "Mostrar menos proyectos"
+  },
+  "contact": {
+    "title": "Trabajemos juntos",
+    "description": "Actualmente estoy abierta a nuevas oportunidades y colaboraciones. Si buscas una desarrolladora Full Stack que disfrute creando aplicaciones web limpias, escalables y centradas en el usuario, no dudes en contactarme.",
+    "email": "Correo",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "form": {
+      "name": {
+        "label": "Nombre",
+        "placeholder": "Tu nombre"
+      },
+      "email": {
+        "label": "Correo electrónico",
+        "placeholder": "ejemplo@correo.com"
+      },
+      "message": {
+        "label": "Mensaje",
+        "placeholder": "Cuéntame sobre tu proyecto..."
+      },
+      "submit": "Enviar mensaje",
+      "sending": "Enviando mensaje",
+      "success": "¡Mensaje enviado exitosamente!",
+      "error": "Algo salió mal. Inténtalo de nuevo."
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Sonia Villeda. Todos los derechos reservados."
+  }
+}

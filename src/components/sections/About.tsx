@@ -1,88 +1,81 @@
+import { useTranslation } from 'react-i18next';
+import { Container } from '../ui/Container';
+import { Section } from '../ui/Section';
+import { Button } from '../ui/Button';
+import { SectionHeader } from '../ui/SectionHeader';
+import { FeatureCard } from '../ui/FeatureCard';
+import { useResume } from '../../hooks/useResume';
+
 export function About() {
+  const { t } = useTranslation();
+  const { resumeURL, resumeFilename } = useResume();
+
   return (
-    <section id="about" className="w-full max-w-7xl py-20">
-      <div className="glass-panel rounded-[2.5rem] p-8 md:p-16">
-        <div className="flex flex-col gap-12">
-          <div className="mx-auto max-w-175 text-center">
-            <h2 className="mb-3 text-xs font-bold uppercase tracking-widest text-primary">
-              About me
-            </h2>
-
-            <h3 className="mb-4 text-3xl font-bold md:text-4xl">
-              Desing Meets Logic
-            </h3>
-
-            <p className="mb-10 text-slate-600">
-              I believe great software is built at the intersection of usability
-              and engineering. With a full stack background, I work across
-              front-end and back-end to build web applications that are both
-              intuitive to use and technically solid.
-            </p>
-
-            <p className="text-slate-600">
-              My experience includes building user interfaces, developing APIs,
-              integrating external services, and working with databases, alwats
-              focusing on clean code, maintainability, and real-world
-              requirements.
-            </p>
-
-            <div className="mt-8">
-              <a
-                href="#"
-                className="inline-flex h-12 items-center gap-2 rounded-full bg-primary px-8 text-sm font-bold text-white shadow-lg shadow-primary/30 transition-all hover:-translate-y-0.5 hover:bg-primary-hover hover:shadow-primary/50"
+    <Section id="about">
+      <Container size="wide" padded={false}>
+        <div className="glass-panel rounded-[2.5rem] p-8 md:p-16">
+          <div className="flex flex-col gap-12">
+            <div className="mx-auto max-w-175 text-center">
+              <SectionHeader
+                title={t('about.title')}
+                subtitle={t('about.subtitle')}
+                subtitleAs="h3"
               >
-                <span className="material-symbols-outlined text-[20px]">
-                  download
-                </span>
-                Download CV
-              </a>
-            </div>
-          </div>
+                <p className="text-slate-600 dark:text-slate-300 mb-10">
+                  {t('about.description_first_line')}
+                </p>
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            <div className="rounded-3xl border border-white/40 bg-white/40 p-8 transition-all duration-300 hover:-translate-y-2 hover:bg-white/60 hover:shadow-lg">
-              <div className="mb-6 flex size-12 items-center justify-center rounded-2xl bg-gradient-to-br from-pink-100 to-pink-50 text-primary">
-                <span className="material-symbols-outlined">brush</span>
+                <p className="text-slate-600 dark:text-slate-300">
+                  {t('about.description_second_line')}
+                </p>
+              </SectionHeader>
+
+              <div className="mt-8">
+                <Button
+                  as="a"
+                  href={resumeURL}
+                  download={resumeFilename}
+                  variant="primary"
+                  className="inline-flex hover:-translate-y-0.5"
+                >
+                  <span className="material-symbols-outlined text-[20px]">
+                    download
+                  </span>
+                  {t('about.download_cv')}
+                </Button>
               </div>
-
-              <h4 className="mb-2 text-xl font-bold">Front-end Development</h4>
-
-              <p className="text-sm text-slate-500">
-                Creating responsive and accessible user interfaces using React
-                and modern JavaScript, with a strong focus on usability and
-                clean component structure.
-              </p>
-            </div>
-
-            <div className="rounded-3xl border border-white/40 bg-white/40 p-8 transition-all duration-300 hover:-translate-y-2 hover:bg-white/60 hover:shadow-lg">
-              <div className="mb-6 flex size-12 items-center justify-center rounded-2xl bg-gradient-to-br from-purple-100 to-purple-50 text-secondary">
-                <span className="material-symbols-outlined">terminal</span>
-              </div>
-
-              <h4 className="mb-2 text-xl font-bold">Backend Logic</h4>
-
-              <p className="text-sm text-slate-500">
-                Developing APIs and backend services with Node.js, handling
-                business logic, data persistence, and integrations that support
-                scalable applications.
-              </p>
             </div>
 
-            <div className="rounded-3xl border border-white/40 bg-white/40 p-8 transition-all duration-300 hover:-translate-y-2 hover:bg-white/60 hover:shadow-lg">
-              <div className="mb-6 flex size-12 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-100 to-blue-50 text-blue-500">
-                <span className="material-symbols-outlined">layers</span>
-              </div>
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+              <FeatureCard
+                icon="brush"
+                title={t('about.feature.frontend.title')}
+                description={t('about.feature.frontend.description')}
+                iconBg="bg-gradient-to-br from-pink-100 to-pink-50 dark:from-primary/20 dark:to-primary/10"
+                animation="animate-float"
+              />
 
-              <h4 className="mb-2 text-xl font-bold">Product & UX Thinking</h4>
+              <FeatureCard
+                icon="terminal"
+                title={t('about.feature.backend.title')}
+                description={t('about.feature.backend.description')}
+                iconBg="bg-gradient-to-br from-purple-100 to-purple-50 dark:from-secondary/20 dark:to-secondary/10"
+                iconColor="text-secondary"
+                animation="animate-float-slow"
+              />
 
-              <p className="text-sm text-slate-500">
-                Applying UX principles to ensure applications are easy to use,
-                performant, and aligned with real user and product needs.
-              </p>
+              <FeatureCard
+                icon="layers"
+                title={t('about.feature.ux.title')}
+                description={t('about.feature.ux.description')}
+                iconBg="bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-500/20 dark:to-blue-500/10 "
+                iconColor="text-blue-500"
+                animation="animate-float-slower"
+              />
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 }
