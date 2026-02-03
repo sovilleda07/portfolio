@@ -43,7 +43,7 @@ export function Hero() {
             <Button
               variant="primary"
               as="a"
-              href="projects"
+              href="#projects"
               className="group relative hover:-translate-y-0.5 w-full sm:w-auto"
             >
               {t('hero.projects')}

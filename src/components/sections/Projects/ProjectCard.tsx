@@ -74,6 +74,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <Button
             as="a"
             href={githubUrl}
+            external
             variant="outline"
             size="sm"
             radius="lg"
@@ -87,6 +88,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <Button
             as="a"
             href={liveUrl}
+            external
             variant="primary"
             size="sm"
             radius="lg"

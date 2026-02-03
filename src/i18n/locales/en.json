@@ -16,7 +16,7 @@
     "title_second_line": "Digital Solutions",
     "subtitle": "Full Stack Web Developer",
     "description": "I build functional and scalable web applications, combining clean front-end interfaces with robust backend logic and API integrations.",
-    "technologies": "React · JavaScript · Node.js · APIs · SQL",
+    "technologies": "React · JavaScript · TypeScript · Node.js · APIs · SQL",
     "projects": "View Projects",
     "contact": "Get in Touch"
   },

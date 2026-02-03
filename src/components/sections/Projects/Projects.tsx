@@ -33,7 +33,9 @@ export function Projects() {
           />
 
           <a
-            href="#"
+            href="https://github.com/sovilleda07"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden items-center gap-2 text-sm font-bold text-primary transition-all hover:gap-3 md:flex"
           >
             {t('projects.github')}
@@ -76,7 +78,9 @@ export function Projects() {
 
         <div className="mt-8 text-center md:hidden">
           <a
-            href="#"
+            href="https://github.com/sovilleda07"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 font-bold text-primary"
           >
             {t('projects.github')}

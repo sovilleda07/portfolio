@@ -16,7 +16,7 @@
     "title_second_line": "Soluciones Digitales",
     "subtitle": "Desarrolladora Web Full Stack",
     "description": "Construyo aplicaciones web funcionales y escalables, combinando interfaces front-end limpias con lógica de back-end robusta e integraciones de API.",
-    "technologies": "React · JavaScript · Node.js · APIs · SQL",
+    "technologies": "React · JavaScript · TypeScript · Node.js · APIs · SQL",
     "projects": "Ver Proyectos",
     "contact": "Hablemos"
   },
@@ -43,7 +43,7 @@
   },
   "skills": {
     "title": "Especialización",
-    "subtitle": "Mi Toolkit",
+    "subtitle": "Mi stack",
     "description": "Una selección de tecnologías diseñadas para construir aplicaciones robustas y escalables.",
     "feature": {
       "frontend": {
