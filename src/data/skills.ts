@@ -28,9 +28,15 @@ export const SKILLS: SkillCategoryData[] = [
         label: 'JavaScript (ES6+)',
         color: 'text-yellow-500',
       },
+      {
+        icon: 'code',
+        label: 'TypeScript',
+        color: 'text-red-500',
+      },
       { icon: 'grid_view', label: 'Bootstrap', color: 'text-indigo-500' },
       { icon: 'flex_wrap', label: 'Tailwind', color: 'text-green-500' },
       { icon: 'code', label: 'React', color: 'text-cyan-500' },
+      { icon: 'code', label: 'Vite', color: 'text-amber-500' },
     ],
   },
   {
