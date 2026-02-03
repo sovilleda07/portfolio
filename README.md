@@ -1,73 +1,124 @@
-# React + TypeScript + Vite
+# Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website showcasing my work as a Full Stack Developer. Built with React, TypeScript, and Tailwind CSS, featuring a clean design with smooth animations and internationalization support.
 
-Currently, two official plugins are available:
+![Portfolio Preview](https://img.shields.io/badge/Status-Live-success?style=flat-square)
+![React](https://img.shields.io/badge/React-19.2.0-blue?style=flat-square&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-blue?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1.18-38bdf8?style=flat-square&logo=tailwindcss)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- **Responsive Design** - Fully responsive layout that works seamlessly across all devices
+- **Dark/Light Mode** - Theme toggle with smooth transitions and persistent user preference
+- **Internationalization** - Multi-language support (English/Spanish) using i18next
+- **Modern UI/UX** - Clean, professional design with smooth animations and interactive elements
+- **Sections**:
+  - Hero section with animated introduction
+  - About section highlighting skills and experience
+  - Skills showcase organized by category (Frontend, Backend, Database)
+  - Projects portfolio with live demos and GitHub links
+  - Contact form for direct communication
+- **Optimized Performance** - Fast loading times with Vite build optimization
+- **Accessibility** - Semantic HTML and ARIA labels for better accessibility
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+### Frontend
+- **React 19.2.0** - UI library for building component-based interfaces
+- **TypeScript 5.9.3** - Type-safe JavaScript for better development experience
+- **Tailwind CSS 4.1.18** - Utility-first CSS framework for rapid styling
+- **Vite 7.2.4** - Next-generation frontend build tool for fast development
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Internationalization
+- **i18next 25.8.0** - Internationalization framework
+- **react-i18next 16.5.3** - React integration for i18next
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Development Tools
+- **ESLint** - Code linting and quality enforcement
+- **TypeScript ESLint** - TypeScript-specific linting rules
+- **Vite Plugin React** - Fast Refresh and JSX support
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📦 Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm or yarn package manager
+
+### Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/sovilleda07/portfolio.git
+   cd portfolio
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables** (optional)
+   
+   Create a `.env.local` file in the root directory if you need to configure any environment-specific variables:
+   ```bash
+   VITE_FORMSPREE_ID=xxxx
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+   
+   The application will be available at `http://localhost:5173`
+
+## 🚀 Available Scripts
+
+- **`npm run dev`** - Start the development server with hot module replacement
+- **`npm run build`** - Build the production-ready application
+- **`npm run preview`** - Preview the production build locally
+- **`npm run lint`** - Run ESLint to check code quality
+
+## 📁 Project Structure
+
+```
+portfolio/
+├── public/              # Static assets
+│   ├── projects/        # Project screenshots
+│   └── resume/          # Resume files
+├── src/
+│   ├── components/      # React components
+│   │   ├── background/  # Background effects
+│   │   ├── layout/      # Header, Footer, etc.
+│   │   ├── sections/    # Main page sections
+│   │   └── ui/          # Reusable UI components
+│   ├── context/         # React context providers
+│   ├── data/            # Static data and configurations
+│   ├── hooks/           # Custom React hooks
+│   ├── i18n/            # Internationalization setup
+│   │   └── locales/     # Translation files (en, es)
+│   ├── styles/          # Global styles
+│   ├── types/           # TypeScript type definitions
+│   ├── App.tsx          # Main application component
+│   ├── main.tsx         # Application entry point
+│   └── index.css        # Global CSS and Tailwind imports
+├── index.html           # HTML template
+├── package.json         # Project dependencies
+├── tsconfig.json        # TypeScript configuration
+├── vite.config.ts       # Vite configuration
+└── README.md            # Project documentation
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📄 License
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 👤 Author
+
+**Sonia Villeda**
+- Full Stack Web Developer
+- GitHub: [@sovilleda07](https://github.com/sovilleda07)
+
+---
+
+Built with ❤️ using React, TypeScript, and Tailwind CSS
